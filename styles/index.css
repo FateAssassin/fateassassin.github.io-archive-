@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353535;
+    padding: 10px;
+}
+  
+.right-nav {
+    text-align: right;
+}
+  
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+  
+.left-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 10px;;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.2s linear;
+
+    color: black;
+    background-color: rgb(148, 148, 148);
+}
+
+.left-nav a:hover{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.right-nav #header{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 40px;
+    background-color: white;
+}
+.right-nav a{
+    text-decoration: none;
+    color: rgb(3, 1, 1);
+}
+
+#fixed-nav{
+    display: none;
+    z-index: 1;
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 20px;
+    margin-top: 12%;
+
+    padding: 20px 20px;
+    padding-top: 00px;
+
+    animation-name: fade-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#fixed-nav h3{
+    color: white;
+}
+#fixed-nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.2s linear;
+
+    color: black;
+    background-color: rgb(207, 207, 207);
+}
+#fixed-nav a:hover{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* Nav End */
+
+.hero {
+    background-image: url("../assets/coding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    position: relative;
+}
+
+.content {
+    background-color: rgba(116, 116, 116, 0.5);
+    border-radius: 15px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+}
+.content img{
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+#sub-content a{
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.split{
+    background-color: rgb(115, 115, 115);
+    height: 50px;
+}
+
+#About{
+    background-image: url("../assets/coding_about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw; /* Set the desired height for the div */
+    position: relative;
+}
+#AboutContent{
+    background-color: rgba(11, 11, 11, 0.8);
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+}
+
+#Projects{
+    background-image: url("../assets/coding_projects.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw; /* Set the desired height for the div */
+    position: relative;
+}
+#ProjectsContent{
+    background-color: rgba(11, 11, 11, 0.8);
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+}
+
+#Reconnect{
+    border: 1px solid rgb(231, 230, 230);
+    background-color: rgb(231, 230, 230);
+    color: black;
+    width: 400px;
+}
+#Crypto-Group{
+    border: 1px solid rgb(231, 230, 230);
+    background-color: rgb(231, 230, 230);
+    color: black;
+    width: 400px;
+}
+
+#Contact{
+    background-image: url("../assets/handshake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vw; /* Set the desired height for the div */
+    position: relative;
+}
+#ContactContent{
+    background-color: rgba(11, 11, 11, 0.8);
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+}
+
+#ContactContent a{
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+}
+
+/* Footer styles */
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+  
+footer p {
+    font-size: 14px;
+}
