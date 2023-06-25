@@ -1,36 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muaz' Blog</title>
-    <link rel="stylesheet" href="styles/index.css">
+<html>
+  <head>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
 
-</head>
-<body>
+    <div class="card">
+      <p class="center">My Profile</p>
 
+      <div class="userInfo alignItems">
 
-    <div id="fixed-nav">
-        <h3>Navigation</h3>
-        <a href="#About">About</a><br><br><br>
-        <a href="#Projects">Projects</a><br><br><br>
-        <a href="#Contact">Contact</a>
-    </div>
-
-
-    <div class="content">
-        
-        <div id="sub-content">
-            <h1>FateAssassin</h1>
-            <a href="#Contact"><span><i class="bi bi-telephone"></i></span> | Contact me!</a><br><br><br>
-            <a href="#"><span><i class="bi bi-arrow-down"></i></span> | Keep scrolling! </a>
+        <img height="70" src="assets/muaz.jpeg" class="userAvatar" />
+        <div class="userDetails">
+          <span>Muaz Ugur</span><br>
+          <span>Freelancer & Developer</span>
         </div>
-        <img src="./assets/muaz.jpeg" width="150px">
+        
+      </div>
+      <div>
+        <p class="center">Current Activity:</p>
+
+        <div class="alignItems activities">
+          <p><span><i class="bi bi-file-earmark-code"></i></span> | Coding</p>
+          <p><span><i class="bi bi-book"></i></span> | Studying</p>
+          <p><span><i class="bi bi-controller"></i></span> | Gaming</p>
+        </div>
+
+      </div>
+
     </div>
-
-</body>
-
-<script src="scripts/index.js"></script>
-
+  </body>
 </html>
