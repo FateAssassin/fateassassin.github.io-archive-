@@ -1,3 +1,19 @@
+@keyframes blink-green {
+  from, to {
+    opacity: 0;
+    background-color: green;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.blinking-green {
+  animation: 1s blink-green ease infinite;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%
+}
+
 :root {
   --color-one: #1c0b2b;
   --color-two: #301c41;
@@ -67,4 +83,8 @@ body {
   background-color: rgb(251, 251, 251, 0.4);
   border-radius: 10px;
   padding: 10px 10px;
+}
+
+.skills li{
+  background-color: black;
 }
