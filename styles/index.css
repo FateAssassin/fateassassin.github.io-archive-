@@ -1,18 +1,4 @@
-@keyframes blink-green {
-  from, to {
-    opacity: 0;
-    background-color: green;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-.blinking-green {
-  animation: 1s blink-green ease infinite;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%
-}
+html, body {margin: 0;}
 
 :root {
   --color-one: #1c0b2b;
@@ -84,7 +70,33 @@ body {
   border-radius: 10px;
   padding: 10px 10px;
 }
+.currentactivity{
+  transform: translateY(-10%);
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.7);
+}
 
-.skills li{
-  background-color: black;
+.socialmedia a{
+  padding: 10px 10px;
+  border: 1px solid rgb(251, 251, 251, 0.4);
+  background-color: rgb(251, 251, 251, 0.4);
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.socialmedia a:hover{
+  transform: translateY(-10%);
+  box-shadow: 0px 15px 20px rgba(22, 22, 22, 0.7);
+}
+.buttonsBottom a{
+  padding: 10px 10px;
+  border: 1px solid rgb(251, 251, 251, 0.4);
+  background-color: rgb(251, 251, 251, 0.4);
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.buttonsBottom a:hover{
+  transform: translateY(-25%);
 }
