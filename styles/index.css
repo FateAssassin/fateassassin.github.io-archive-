@@ -106,7 +106,7 @@ body{
 
 .projects {
   height: fit-content;
-  width: 370px;
+
   padding: 20px;
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.4);
@@ -116,4 +116,53 @@ body{
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: relative;
   z-index: 5;
+}
+.project{
+  margin-right: 10px;
+  background-color: rgba(203, 203, 203, 0.4);
+  padding: 10px 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+.project a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact{
+  height: fit-content;
+
+  padding: 20px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur (4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 5;
+}
+.contact a:not(#headercontact){
+  padding: 10px 10px;
+  border: 1px solid rgb(251, 251, 251, 0.4);
+  background-color: rgb(251, 251, 251, 0.4);
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.contact p:not(#headercontact){
+  padding: 10px 10px;
+  border: 1px solid rgb(251, 251, 251, 0.4);
+  background-color: rgb(251, 251, 251, 0.4);
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.contact a:hover:not(#headercontact){
+  transform: translateY(-25%);
+}
+.contact p:hover:not(#headercontact){
+  transform: translateY(-25%);
 }
